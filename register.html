@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <script defer src="register.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <a href="home.html"><img src="pictures/shoose-logo.png"></a>
+        <span class="main-title">
+            <h6>All I NEED IS MY SHOESEE</h6>
+        </span>
+        <div id="error" class="error"></div>
+        <h2>Registration</h2>
+        <form id ="form" method="post">
+            <div class="form">
+                <h3>First name:</h3>
+                <input type="text" class="input-field" id="fname" name="fname" required>
+
+                <h3>Last name:</h3>
+                <input type="text" class="input-field" id="lname" name="lname" required>
+
+                <h3>E-mail:</h3>
+                <input type="email" class="input-field" id="email" name="email" required>
+
+                <h3>User name:</h3>
+                <input type="text" class="input-field" id="uname" name="uname" required>
+
+                <h3>Password</h3>
+                <input type="password" class="input-field" id="pwd" name="pwd" required>
+
+                <h3>Password again:</h3>
+                <input type="password" class="input-field" id="pwd2" name="pwd2" required>
+
+                <h3>Phone number:</h3>
+                <input type="tel" class="input-field" id="tel" required>
+
+            </div>
+            <div class="submit">
+                <input type="reset" value="Reset" class="btn">
+                <button class="btn">Send</button>
+            </div>
+        
+        </form>
+    </body>
+</html>

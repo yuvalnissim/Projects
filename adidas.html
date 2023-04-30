@@ -1,0 +1,371 @@
+<html>
+    <head>
+        <title>Adidas</title>
+        <script defer src="app.js"></script>
+        <script type='text/javascript' language='javascript' >
+            function doSearch(text) {
+                if (window.find && window.getSelection) {
+                    document.designMode = "on";
+                    var sel = window.getSelection();
+                    sel.collapse(document.body, 0);
+        
+                    while (window.find(text)) {
+                        document.getElementById("button").blur();
+                        document.execCommand("HiliteColor", false, "yellow");
+                        sel.collapseToEnd();
+                    }
+                    document.designMode = "off";
+                } else if (document.body.createTextRange) {
+                    var textRange = document.body.createTextRange();
+                    while (textRange.findText(text)) {
+                        textRange.execCommand("BackColor", false, "yellow");
+                        textRange.collapse(false);
+                    }
+                }
+            }   
+       
+        </script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <a href="home.html"><img src="pictures/shoose-logo.png"></a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="line">|</li>
+                <li><a href="login.html">Log in</a></li>
+                <li class="line">|</li>
+                <li><a href="contactUs.html">Contact us</a></li>
+                <li class="line">|</li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li class="line">|</li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li class="line">|</li>
+                <li><a href="readme.html">Readme</a></li>
+            </ul>
+        </nav>
+        <span class="main-title">
+            <h6>All I NEED IS MY SHOESEE</h6>
+        </span>
+        <div class="form">
+            <input type="text" class="input-field" id="search">
+            <input type="button" class="btn-search" id="button"  onmousedown="doSearch(document.getElementById('search').value)" value="Search">
+        </div>
+        <img src="pictures/adidas.png" class="title-picture">
+        <div class="sub-picture">    
+            <img src="pictures/adidas-pictures/ad1.jpeg" class="sub-title-picture">
+            <img src="pictures/adidas-pictures/ad2.jpeg" class="sub-title-picture">
+        </div>
+
+        <span class="shoe">
+            <h5>Adidas F50 Ghosted FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe1.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas F50 Ghosted FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe2.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas F50 Ghosted FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe3.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas F50 Ghosted UCL FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe4.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Nemeziz 19+ FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe5.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe6.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe7.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe8.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe9.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe10.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe11.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="btn">ADD TO CART</button>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe12.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric+ FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe13.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Edge Geometric+ FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe14.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Freak X-Man FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe15.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Freak+ FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe16.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas Predator Freak+ FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe17.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas X Speedflow.1 FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe18.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+
+        <span class="shoe">
+            <h5>Adidas X Speedflow+ FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe19.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+        
+        <span class="shoe">
+            <h5>Adidas X Speedflow+ FG Pro</h5>
+            <img src="pictures/adidas-pictures/shoe20.png" class="shoe">
+            <h5>price: 450₪</h5>
+            <button class="button">
+                <span>Add to cart</span>
+                <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </button>
+            <script src="app.js"></script>
+        </span>
+    </body>
+</html>
